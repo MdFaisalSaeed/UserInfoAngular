@@ -1,0 +1,22 @@
+<div style="margin-top: 100px; margin-left: 600px !important">
+    <!-- Email input -->
+    <div class="form-outline mb-3">        
+        <label class="form-label" for="form2Example1">UserName</label>
+        <input type="text" id="form2Example1" [(ngModel)]="userName" class="form-control" style="width: 200px;"/>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-3">        
+        <label class="form-label" for="form2Example2">Password</label>
+        <input type="password" id="form2Example2" [(ngModel)]="password" class="form-control" style="width: 200px;"/>
+    </div>
+
+    <!-- 2 column grid layout for inline styling -->
+
+
+    <!-- Submit button -->
+    <button type="button" class="btn btn-primary btn-block mb-4" type="submit" (click)="OnSubmit()">Sign in</button>
+
+</div>
+<p style="margin-left: 550px; color: red;;">{{errors}}</p>
+<router-outlet></router-outlet>
